@@ -3,7 +3,7 @@ export async function charge(order) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount: order.total, currency: "USD" }),
-    signal: AbortSignal.timeout(10_000),
+    signal: AbortSignal.timeout(15_000),
   });
   if (!response.ok) throw new Error(`Payment gateway returned ${response.status}`);
   return response.json();
