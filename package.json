@@ -1,0 +1,9 @@
+{
+  "name": "juniper-pine-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo shop for Blipit product videos. Made-up data only.",
+  "type": "module",
+  "scripts": { "start": "node src/server.js" },
+  "dependencies": { "@blipit/node": "^0.3.0" }
+}
